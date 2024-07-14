@@ -146,11 +146,9 @@ label {
 .caferacer-menu {
   width: 80%;
   height: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
   margin: auto;
-  gap: 5px;
   transform: skew(-25deg);
   border: 10px red solid;
 }
@@ -163,23 +161,26 @@ label {
 }
 
 .caferacer-img img {
+  width: 700px;
   transform: skew(25deg);
+  margin-top: 200px;
 }
 
 .touringbike-menu {
   width: 80%;
   height: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 150px;
+  display: flex;
   align-items: center;
+  margin: auto;
+  margin-top: 130px;
   transform: skew(-25deg);
   border: 10px red solid;
-  margin-left: 150px;
 }
 
 .touringbike-img img {
+  width: 700px;
   transform: skew(25deg);
+  margin-top: 200px;
 }
 .container-bikes button {
   width: 300px;
@@ -275,24 +276,33 @@ button:hover {
   /* container explore end */
 
   /* container meet our bikes */
+  .container-bikes {
+    width: 100%;
+    border: 2px red solid;
+  }
   .container-bikes h2 {
     font-size: 30px;
     margin-top: 20px;
   }
   .bike-menu {
-    border: 2px solid red;
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr;
+    border: 20px blue solid;
+    width: 100%;
   }
   .caferacer-menu,
   .touringbike-menu {
-    border: 2px blue solid;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-  .bike-menu img {
+    border: 5px orange solid;
     width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .caferacer-img img {
+    width: 200px;
+  }
+  .touringbike-img img {
+    width: 200px;
+  }
+  .caferacer-txt,
+  .touringbike-txt {
+    font-size: 20px;
   }
 }
