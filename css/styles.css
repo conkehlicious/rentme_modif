@@ -74,6 +74,19 @@ label {
   font-size: 150px;
   text-align: center;
   color: var(--main-blue);
+  transform: translateX(-70%);
+  opacity: 0;
+  animation: slide-in 2s ease-out forwards;
+}
+@keyframes slide-in {
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 .img-hero {
