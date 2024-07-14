@@ -33,14 +33,7 @@ nav {
   z-index: 9999;
   top: -4px;
 }
-/* .darkmode-container { 
-  position: relative;
-  top: -28px;
-  left: 850px;
-}
-.darkmode-container button {
-  width: 50px;
-}*/
+
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -68,6 +61,7 @@ label {
 
 .container-hero {
   width: 100%;
+  height: 550px;
 }
 
 .title-hero {
@@ -94,6 +88,120 @@ label {
   position: relative;
   top: -300px;
 }
+
+/* container promo start*/
+.container-promo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+.promo1 {
+  background-color: #df9d19;
+  width: 110%;
+}
+.promo2 {
+  width: 105%;
+  background-color: #0c2d57;
+  color: white;
+  transform: skew(-45deg);
+}
+.promo2-img {
+  transform: skew(45deg);
+}
+.promo3 {
+  background-color: #df272e;
+}
+/* container promo end */
+
+/* container explore  start*/
+.container-explore {
+  margin-top: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/vegas-sign.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.tour {
+  display: grid;
+  grid-column: 1fr;
+  justify-content: center;
+  font-size: 25px;
+  color: rgb(201, 194, 194);
+  padding: 100px 0 100px 0;
+}
+.tour li {
+  list-style-image: url(../images/icons8-motorbike-25.png);
+}
+/* container explore  end */
+
+/* MEET OUR BIKES- CONTAINER */
+.container-bikes {
+  text-align: center;
+  font-size: 60px;
+}
+.caferacer-menu {
+  width: 80%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: auto;
+  gap: 5px;
+  transform: skew(-25deg);
+  border: 10px red solid;
+}
+
+.caferacer-txt,
+.touringbike-txt {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+}
+.caferacer-img {
+  width: 100%;
+  height: 350px;
+}
+.caferacer-img img {
+  transform: skew(25deg);
+}
+
+.touringbike-menu {
+  width: 80%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 150px;
+  align-items: center;
+  transform: skew(-25deg);
+  border: 10px red solid;
+  margin-left: 150px;
+}
+.touringbike-img {
+  width: 100%;
+  height: 350px;
+}
+.touringbike-img img {
+  transform: skew(25deg);
+}
+.container-bikes button {
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--main-blue);
+  color: white;
+  border: none;
+  cursor: cell;
+}
+button:hover {
+  color: #df9d19;
+  font-weight: 600;
+}
+/* media for mobile */
 @media (max-width: 430px) {
   body {
     max-width: 100%;
@@ -131,6 +239,8 @@ label {
     font-weight: 700;
   }
   /* navbar end */
+
+  /* container hero start */
   .title-hero {
     font-size: 70px;
     line-height: 1;
@@ -138,5 +248,75 @@ label {
   .img-hero img {
     width: 300px;
     margin-top: 80px;
+  }
+  /* container hero end */
+
+  /* container promo start */
+  .container-promo {
+    margin-top: -200px;
+    width: 100%;
+    font-size: 10px;
+  }
+  .promo1 {
+    width: 113%;
+  }
+  .promo2 {
+    width: 115%;
+    padding-top: 5px;
+  }
+  .promo3 {
+    padding-left: 40px;
+  }
+  /* container promo end */
+
+  /* container explore start */
+
+  .container-explore {
+    width: 100%;
+  }
+  .tour {
+    font-size: 20px;
+    padding: 40px;
+  }
+  /* container explore end */
+
+  /* container meet our bikes */
+  .container-bikes h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .bike-menu {
+    margin-top: -30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .caferacer-menu,
+  .touringbike-menu {
+    border: none;
+  }
+  .caferacer-txt {
+    position: relative;
+    top: 100px;
+    right: 270px;
+    font-size: 20px;
+  }
+  .caferacer-img img {
+    width: 350px;
+    position: relative;
+    margin-top: 50px;
+  }
+  .touringbike-txt {
+    font-size: 20px;
+    position: relative;
+    top: -25px;
+    right: 80px;
+  }
+  .touringbike-img img {
+    width: 350px;
+    position: relative;
+    right: 460px;
+    margin-top: -90px;
   }
 }
