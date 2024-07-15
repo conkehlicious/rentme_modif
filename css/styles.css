@@ -11,7 +11,6 @@
 body {
   background-color: rgb(180, 177, 177);
   font-family: poppins, arial;
-  height: 5000px;
 }
 .logo {
   text-align: center;
@@ -312,6 +311,48 @@ button:hover {
   left: 280px;
 }
 
+/* footer */
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: var(--main-blue);
+  color: white;
+}
+.footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 20px;
+  line-height: 3;
+}
+.company h3 {
+  font-size: 50px;
+}
+.company span {
+  color: red;
+}
+.sosmed i {
+  font-size: 20px;
+  padding-right: 30px;
+  color: #df272e;
+}
+.quicklink a {
+  color: white;
+}
+.quicklink a:hover {
+  color: #df272e;
+  cursor: cell;
+}
+.information span {
+  padding: 10px;
+}
+.information i {
+  color: red;
+}
+h6 {
+  text-align: center;
+}
+
 /* media for mobile */
 @media (max-width: 460px) {
   body {
@@ -448,6 +489,12 @@ button:hover {
   /* shop online */
   .container-gears-grid {
     width: 90%;
+    margin-top: 20px;
+  }
+  .container-gears-grid h2 {
+    font-size: 35px;
+    line-height: 1;
+    padding-bottom: 20px;
   }
   .gears-menu-grid {
     display: grid;
@@ -456,5 +503,12 @@ button:hover {
   }
   .gear .shop-btn {
     display: none;
+  }
+  .footer-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .company {
+    line-height: 1.8;
   }
 }
