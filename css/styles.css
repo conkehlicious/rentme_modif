@@ -444,4 +444,17 @@ button:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow-y: hidden;
   }
+
+  /* shop online */
+  .container-gears-grid {
+    width: 90%;
+  }
+  .gears-menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-y: hidden;
+  }
+  .gear .shop-btn {
+    display: none;
+  }
 }
