@@ -278,31 +278,38 @@ button:hover {
   /* container meet our bikes */
   .container-bikes {
     width: 100%;
-    border: 2px red solid;
+    height: 400px;
   }
   .container-bikes h2 {
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-top: 15px;
+    line-height: 1;
   }
   .bike-menu {
-    border: 20px blue solid;
     width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -220px;
   }
   .caferacer-menu,
   .touringbike-menu {
-    border: 5px orange solid;
-    width: 300px;
+    width: 30px;
+    height: 39px;
     display: grid;
     grid-template-columns: 1fr;
+    border: none;
   }
   .caferacer-img img {
     width: 200px;
   }
   .touringbike-img img {
     width: 200px;
+    margin-bottom: 20px;
   }
   .caferacer-txt,
   .touringbike-txt {
     font-size: 20px;
+    margin-top: -40px;
   }
 }
