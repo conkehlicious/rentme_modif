@@ -359,6 +359,21 @@ h6 {
   text-align: center;
 }
 
+/* whatsapp icon */
+.whatsapp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 9999;
+}
+
 /* media for mobile */
 @media (max-width: 460px) {
   body {
@@ -454,7 +469,7 @@ h6 {
     height: 300px;
     display: flex;
     flex-direction: column;
-    margin-top: -220px;
+    margin-top: -198px;
   }
   .caferacer-menu,
   .touringbike-menu {
@@ -476,8 +491,11 @@ h6 {
   }
   .caferacer-txt,
   .touringbike-txt {
+    width: 60%;
+    margin: auto;
     font-size: 20px;
     margin-top: -40px;
+    transform: skew(-25deg);
   }
 
   /* container tour packages */
@@ -516,5 +534,11 @@ h6 {
   }
   .company {
     line-height: 1.8;
+  }
+  .whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    z-index: 9999;
   }
 }
